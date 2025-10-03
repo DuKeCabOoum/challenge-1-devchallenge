@@ -1,71 +1,80 @@
 *{
     font-family: "Sora", sans-serif;
-    color: #20293A;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    display:grid;
-    place-items: center;
-    margin: auto;
-    width: 400px;
-    height: 400px;
-    
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAF9;
 }
 
 main{
-    background-color: #FFFFFF;
-    box-shadow: 0px 12px 24px 0px #E5EAF0;
-    border-radius: 12px;
-    margin-top: 164px;
-    border: 0.1px solid #FFFFFF;
-   
-    
+ width: 368px;
+ border-radius: 16px;
+ background-color: #ffff;
+ box-shadow: 8px 8px 20px 0px rgba(44, 44, 44, 0.08);
 }
 
-.photo-cactus {
-    display: block;
+.contenu-global{
     border-radius: 10px;
-    margin: auto;
-    margin-top: 16px;
-    width: 336px;
-    height: 152px;
-    
-    
 }
 
-.design p {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    background-color: #F2EAFD;
-    color: #7C19EE;
-    height: 24px;
-    width: 60px;
-    text-align: center;
+
+.photo{
+   border-radius: 12px;
+   width: 336px;
+   height: 152px;
+   margin: 16px;
+}
+
+.badge p{
+    font-size: 10px;
     font-weight: bold;
-    border-radius: 25px;
-    margin: 16px 0 16px 16px;
-    padding: 0px 12px;
+    color: #7C19EE;
+    border-radius: 9999px;
+    display: inline-block;
+    background-color: #F2EAFD;
+    line-height: 1;
+    padding: 6px 12px;
+    margin: 0px 0px 16px 16px;
 }
 
-.contenu p{
-    border-bottom: 1px #E5EAF0 solid;
-    margin: 6px 16px 20px 16px;
-    padding-bottom: 20px;
-    color: #394150;
-    font-size: 14px;
+.badge{
+    background-color: #ffff;
 }
 
-.contenu h1{
+.contenu-body{
+    margin: 0px 16px;
+}
+
+.contenu-body h1{
     font-size: 18px;
-    margin: 0px 16px 0px 16px;
+    margin-bottom: 6px;
+    color: #20293A;
 }
 
-.auteur {
+.contenu-body p{
     font-size: 14px;
-    margin: 0px 16px 20px 16px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
 
+.auteur{
+    font-size: 12px;
+    font-weight: 300;
+    color: #20293A;
+    margin: 0px 16px 20px 16px;
+}
+
+.divider{
+  height: 1px;
+  background-color: #E5EAF0;
+  margin: 0 0px 20px 0px;
+  width: 100%;
 }
